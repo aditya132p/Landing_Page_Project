@@ -1,0 +1,397 @@
+/* General styles for larger screens (desktop) */
+body {
+    font-size: 16px;
+}
+
+/* Tablet (between 478px and 991px) */
+@media (max-width: 991px) and (min-width: 479px) {
+    body {
+        font-size: 14px;
+    }
+
+    .heading-h1 {
+        font-size: 3rem;
+        font-weight: var(---fs-700);
+        line-height: 3rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .heading-h2 {
+        font-size: 2rem;
+    }
+
+    /* Hero Section Started */
+    nav .nav-center {
+        display: none;
+    }
+
+    nav .nav-right {
+        display: none
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .hero-container {
+        padding-top: 2rem;
+    }
+
+    .hero-left .hero-btn {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .hero-left .hero-content {
+        gap: 1.3rem;
+    }
+
+    /* Hero Section Ended */
+
+    .why-us-left p {
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: var(---paragraph--color);
+    }
+
+    .why-us-left {
+        gap: 1rem;
+    }
+
+    .why-us-right .why-us-img-container {
+        grid-template-columns: repeat(3, minmax(60px, 120px));
+        column-gap: 1rem;
+        row-gap: 0.8rem
+    }
+
+    .card-bottom h4 {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .card-bottom p {
+        font-size: 0.65rem;
+        font-weight: 300;
+    }
+
+    .testimonials-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials .testimonials-card-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 2rem;
+    }
+
+    .testimonials-heading h2 {
+        line-height: 2.5rem;
+        font-size: 2.6rem;
+    }
+
+    /* Pricing Section Started */
+    .pricing-header {
+        gap: 1.5rem;
+    }
+
+    .pricing-header h2 {
+        width: 60%;
+        line-height: 2.75rem;
+    }
+
+    .pricing-header p {
+        font-size: 1.263rem;
+    }
+
+    .pricing-header-radio span {
+        font-size: 1.263rem;
+
+    }
+
+    .pricing-header-radio .toggle-switch {
+        width: 93px;
+        height: 45px;
+    }
+
+    .pricing-header-btn span {
+        font-size: 1.475rem;
+    }
+
+    .pricing .pricing-bottom {
+        padding-top: 3rem;
+        gap: 1rem;
+    }
+
+    .pricing-card {
+        padding: 1.5rem;
+    }
+
+    .pricing-card-top .card-price h3 {
+        /* font-size: 1.725rem; */
+        font-size: calc(1.3rem + 1.6vw);
+    }
+
+    .pricing-card-top h4 {
+        /* font-size: 1.35rem; */
+        font-size: calc(1.3rem + 1vw);
+    }
+
+    .pricing-card-top p {
+        font-size: 0.65rem;
+    }
+
+    .pricing-card-bottom ul li {
+        font-size: calc(0.5rem + 0.9vw);
+    }
+
+
+
+    .footer-info p {
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+
+    .footer-nav span {
+        font-size: 0.8rem;
+    }
+
+    .footer-nav a {
+        color: #ffffff;
+        font-family: "Inter", sans-serif;
+        font-size: 0.7rem;
+        font-weight: var(---fs-400);
+    }
+
+}
+
+@media (max-width:761px) {
+    nav .nav-center {
+        display: none;
+    }
+
+    nav .nav-right {
+        display: none
+    }
+
+    .hero .hero-right {
+        width: 50%;
+    }
+
+    .hero-left p {
+        width: 100%;
+    }
+
+    /* why us Section */
+    .why-us-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card .card-top img {
+        max-width: 70px;
+    }
+
+    .why-us-bottom .card {
+        text-align: center;
+        width: 251px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .why-us-right,
+    .why-us-left {
+        width: 100%;
+    }
+
+    .why-us-right .why-us-img-container {
+        grid-template-columns: repeat(3, minmax(60px, 1fr));
+        row-gap: 0rem;
+        justify-content: center;
+    }
+
+    .why-us-img-container img {
+        max-width: 130px;
+    }
+
+    .testimonials-top .testimonials-heading {
+        padding-top: 4rem;
+        padding-left: 5rem;
+    }
+
+
+
+}
+
+/* Mobile (up to 478px) */
+@media (max-width: 498px) {
+    .nav-left a {
+        display: none;
+    }
+    header nav { 
+            padding-right: 0rem;
+        }
+    .testimonials-top .testimonials-heading {
+        
+        padding-top: 4rem;
+        padding-left: 5rem;
+    }
+
+    .testimonials-bottom {
+        flex-direction: column;
+    }
+
+    .testimonials-bottom .testimonials-bottom-left,.testimonials-bottom .testimonials-bottom-right {
+        width: 100%;
+    }
+    .heading-h1 {
+        font-size: 2.4rem;
+        font-weight: var(---fs-700);
+        line-height: 2.4rem;
+    }
+
+    .heading-h2 {
+        font-size: 2rem;
+        font-weight: var(---fs-800);
+        font-family: 'Inter', sans-serif;
+        line-height: 2rem;
+        color: var(---paragraph--color);
+    }
+
+
+    body {
+        font-size: 12px;
+    }
+
+    main .hero-container {
+        padding-top: 2rem;
+        flex-direction: column-reverse;
+    }
+
+    .hero-left .hero-content {
+        gap: 1.65rem;
+    }
+
+    .hero-left .bread_crunch {
+        padding-top: 1rem;
+    }
+
+    .hero .hero-left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero .hero-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero .hero-right img {
+        width: 350px;
+        height: auto;
+    }
+
+    .why-us-bottom {
+        flex-wrap: wrap;
+    }
+
+    .testimonials-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials .testimonials-card-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 2rem;
+    }
+
+    .testimonials-heading h2 {
+        line-height: 2.5rem;
+        font-size: 2.6rem;
+    }
+
+    .pricing-header h2 {
+        width: 100%;
+        line-height: 2.65rem;
+        font-weight: var(---fs-700) !important;
+    }
+
+    .pricing-header p {
+        font-size: 1.13rem;
+        line-height: 1.563rem;
+    }
+
+    .pricing-header-radio span {
+        font-size: 1.163rem
+    }
+
+    .pricing-header-radio .toggle-switch {
+        width: 73px;
+        height: 35px;
+    }
+
+    .pricing-header-btn span {
+        font-size: 1.275rem;
+    }
+
+    .pricing .pricing-bottom {
+        gap: 1.4rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-info p {
+        font-size: 0.5rem;
+        line-height: 1rem;
+    }
+
+    .why-us-img-container img {
+        max-width: 90px;
+    }
+
+    .footer-info {
+        width: 100%;
+    }
+
+    footer .footer-info-container {
+        flex-direction: column;
+        padding-block: 20px;
+    }
+
+    .footer-nav {
+        gap: 1rem;
+    }
+
+    .footer-nav a {
+        font-size: 0.7rem;
+    }
+
+    .footer-nav-container {
+
+        width: 100%;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .footer-nav span {
+        font-size: 0.8rem;
+        font-weight: var(---fs-700);
+    }
+
+    .menu {
+        display: block;
+    }
+
+}
