@@ -194,7 +194,7 @@ height: 300px;
 main .hero-container {
     width: 100%;
     padding-top: 4rem;
-    max-height: calc(100vh - 100px);
+/*     max-height: calc(100vh - 100px); */
     /* background-color: #B00000; */
     display: flex;
     /* gap: 2rem; */
