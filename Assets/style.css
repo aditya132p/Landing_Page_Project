@@ -286,7 +286,9 @@ main .hero-container {
 }
 
 .hero-right img {
+    aspect-ratio: 3 / 2; /* Example aspect ratio */
     width: 100%;
+    height: auto;
 }
 
 /* Why us Section Started */
